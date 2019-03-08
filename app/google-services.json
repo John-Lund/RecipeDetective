@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "761217314358",
+    "firebase_url": "https://recipedetective.firebaseio.com",
+    "project_id": "recipedetective",
+    "storage_bucket": "recipedetective.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:761217314358:android:43fc119ad24f20b7",
+        "android_client_info": {
+          "package_name": "com.example.android.recipedetective"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "761217314358-md6i42llbua1gjs2g5b4ls9u0444pq6d.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.android.recipedetective",
+            "certificate_hash": "93ba58dce4c896753d35adb7f8ee6cc3a5b964d9"
+          }
+        },
+        {
+          "client_id": "761217314358-d4dvuvugln6sjq6jort7khgl3gjmf1rq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCi-g_treyfBUWvkkHdln1qW8gsbpvp1yg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "761217314358-d4dvuvugln6sjq6jort7khgl3gjmf1rq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".search.SearchDetailsActivity">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/search_details_activity_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimaryDark"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:contentDescription="@string/details"
+                android:id="@+id/app_title_image_view1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="@dimen/title_padding"
+                android:paddingStart="0dp"
+                android:paddingEnd="65dp"
+                android:paddingBottom="@dimen/title_padding"
+                app:srcCompat="@drawable/svg_title_details___"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="18dp" />
+        </android.support.v7.widget.Toolbar>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@color/colorPrimaryLight"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/search_details_activity_toolbar">
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/search_details_margin"
+                android:layout_marginEnd="@dimen/search_details_margin"
+                android:animateLayoutChanges="true"
+                android:background="@color/lightGrey">
+
+                <TextView
+                    android:id="@+id/details_recipe_name_text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="70dp"
+                    android:layout_marginTop="32dp"
+                    android:layout_marginEnd="36dp"
+                    android:animateLayoutChanges="true"
+                    android:fontFamily="@font/pt_serif_web_bolditalic"
+                    android:includeFontPadding="false"
+                    android:lineSpacingExtra="-8sp"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/fullRed"
+                    android:textSize="28sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/details_recipe_image"
+                    tools:text="Salmon Mouse with lots of other stuff that tastes really nice like chocolate" />
+
+                <TextView
+                    android:id="@+id/details_servings_text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="36dp"
+                    android:fontFamily="@font/opensans_regular"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/darkGrey"
+                    android:textSize="12sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageView9"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/imageView9"
+                    app:layout_constraintTop_toTopOf="@+id/imageView9"
+                    tools:text="8" />
+
+                <TextView
+                    android:id="@+id/details_ingredients_list_text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="36dp"
+                    android:fontFamily="@font/opensans_regular"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/darkGrey"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/imageView8"
+                    app:layout_constraintTop_toBottomOf="@+id/textView6"
+                    tools:text="hjhkjhjkh" />
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginEnd="8dp"
+                    android:fontFamily="@font/pt_serif_web_bolditalic"
+                    android:includeFontPadding="false"
+                    android:text="@string/ingredients"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/details_prep_time_text" />
+
+                <TextView
+                    android:id="@+id/details_source_name_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/opensans_regular"
+                    android:includeFontPadding="false"
+                    android:textColor="@color/darkGrey"
+                    app:layout_constraintStart_toStartOf="@+id/textView9"
+                    app:layout_constraintTop_toBottomOf="@+id/textView9"
+                    tools:text="BBC Food" />
+
+                <ImageView
+                    android:id="@+id/details_recipe_image"
+                    android:layout_width="0dp"
+                    android:layout_height="240dp"
+                    android:contentDescription="@string/a_picture_of_the_recipe"
+                    android:scaleType="centerCrop"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:srcCompat="@drawable/placeholder" />
+
+                <TextView
+                    android:id="@+id/details_prep_time_text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="24dp"
+                    android:fontFamily="@font/opensans_regular"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/darkGrey"
+                    android:textSize="12sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageView8"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline11"
+                    app:layout_constraintStart_toEndOf="@+id/imageView8"
+                    app:layout_constraintTop_toTopOf="@+id/imageView8"
+                    tools:text="2 hours 10 mins" />
+
+                <Button
+                    android:id="@+id/detail_site_link_button"
+                    style="@style/GreenButtonStyle"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="32dp"
+                    android:layout_marginEnd="8dp"
+                    android:text="@string/see_the_method"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/details_ingredients_list_text" />
+
+                <android.support.design.widget.FloatingActionButton
+                    android:id="@+id/search_details_fab"
+                    android:layout_width="56dp"
+                    android:layout_height="56dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="36dp"
+                    app:backgroundTint="@color/diffusedRed"
+                    app:layout_constraintBottom_toBottomOf="@+id/details_recipe_image"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/details_recipe_image"
+                    app:srcCompat="@drawable/ic_add_black_24dp" />
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/opensans_light"
+                    android:includeFontPadding="false"
+                    android:text="@string/found_on"
+                    android:textColor="@color/darkGrey"
+                    android:textSize="12sp"
+                    app:layout_constraintStart_toStartOf="@+id/details_recipe_name_text"
+                    app:layout_constraintTop_toBottomOf="@+id/details_recipe_name_text" />
+
+                <ImageView
+                    android:contentDescription="@string/time_icon"
+                    android:id="@+id/imageView8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="68dp"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/details_source_name_text"
+                    app:srcCompat="@drawable/ic_baseline_clock_24px" />
+
+                <ImageView
+                    android:contentDescription="@string/people_this_recipe_serves"
+                    android:id="@+id/imageView9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageView8"
+                    app:layout_constraintStart_toStartOf="@+id/guideline11"
+                    app:layout_constraintTop_toTopOf="@+id/imageView8"
+                    app:srcCompat="@drawable/ic_baseline_people_24px" />
+
+                <android.support.constraint.Guideline
+                    android:id="@+id/guideline11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.6" />
+
+                <ImageView
+                    android:contentDescription="@null"
+                    android:id="@+id/imageView10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="32dp"
+                    android:layout_marginBottom="32dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/details_ingredients_list_text"
+                    app:layout_constraintTop_toBottomOf="@+id/textView10"
+                    app:srcCompat="@drawable/svg_u__capst_yumlyref" />
+
+                <ImageView
+                    android:contentDescription="@null"
+                    android:id="@+id/details_rating_image_view"
+                    android:layout_width="95dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    app:layout_constraintEnd_toEndOf="@+id/detail_site_link_button"
+                    app:layout_constraintStart_toStartOf="@+id/detail_site_link_button"
+                    app:layout_constraintTop_toBottomOf="@+id/detail_site_link_button"
+                    app:srcCompat="@drawable/threestarsnew" />
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/opensans_light"
+                    android:text="@string/yummly_rating"
+                    android:textColor="@color/darkGrey"
+                    android:textSize="12sp"
+                    app:layout_constraintEnd_toEndOf="@+id/details_rating_image_view"
+                    app:layout_constraintStart_toStartOf="@+id/details_rating_image_view"
+                    app:layout_constraintTop_toBottomOf="@+id/details_rating_image_view" />
+
+                <ImageView
+                    android:contentDescription="@string/recipe_is_a_favourite"
+                    android:id="@+id/details_bookmark_icon"
+                    android:layout_width="@dimen/bookmark_size"
+                    android:layout_height="@dimen/bookmark_size"
+                    android:layout_marginEnd="20dp"
+                    app:layout_constraintEnd_toStartOf="@+id/textView9"
+                    app:layout_constraintTop_toTopOf="@+id/imageView12"
+                    app:srcCompat="@drawable/ic_baseline_bookmark_24px" />
+
+                <ImageView
+                    android:contentDescription="@null"
+                    android:id="@+id/imageView12"
+                    android:layout_width="30dp"
+                    android:layout_height="@dimen/packer_height"
+                    android:layout_marginStart="8dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/details_recipe_image"
+                    app:layout_constraintStart_toStartOf="parent" />
+            </android.support.constraint.ConstraintLayout>
+        </ScrollView>
+    </android.support.constraint.ConstraintLayout>
+</layout>

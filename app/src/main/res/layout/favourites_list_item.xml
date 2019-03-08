@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/favourites_list_item_background"
+    android:focusable="true"
+    android:paddingStart="5dp"
+    android:paddingEnd="5dp">
+
+    <ImageView
+        android:id="@+id/favourites_item_image"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:contentDescription="@string/a_picture_of_the_recipe"
+        android:scaleType="centerCrop"
+        android:visibility="visible"
+        app:layout_constraintDimensionRatio="w,1:1"
+        app:layout_constraintEnd_toStartOf="@+id/guideline44"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/placeholder" />
+
+    <TextView
+        android:id="@+id/light_recipe_title_background"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/colorPrimaryLight"
+        android:fontFamily="@font/pt_serif_web_bolditalic"
+        android:gravity="center"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="18sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/favourites_item_image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline44"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/decoration_light_image_view"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="@null"
+        android:cropToPadding="false"
+        android:scaleType="fitStart"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/light_recipe_title_background"
+        app:layout_constraintStart_toStartOf="@+id/light_recipe_title_background"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/decoration_marquee_vertical_light" />
+
+    <TextView
+        android:id="@+id/light_recipe_title_text_view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/pt_serif_web_bolditalic"
+        android:gravity="center"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="@dimen/favourites_list_item_text_size"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/light_recipe_title_background"
+        app:layout_constraintEnd_toEndOf="@+id/light_recipe_title_background"
+        app:layout_constraintStart_toStartOf="@+id/guideline44"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Chillli and lime prawns" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline44"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <TextView
+        android:id="@+id/dark_recipe_title_background"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/colorPrimary"
+        android:fontFamily="@font/pt_serif_web_bolditalic"
+        android:gravity="center"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/favourites_item_image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline44"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/decoration_dark_image_view"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="@null"
+        android:cropToPadding="false"
+        android:scaleType="fitStart"
+        app:layout_constraintBottom_toBottomOf="@+id/dark_recipe_title_background"
+        app:layout_constraintStart_toStartOf="@+id/dark_recipe_title_background"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/decoration_marquee_vertical_dark" />
+
+    <TextView
+        android:id="@+id/dark_recipe_title_text_view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/pt_serif_web_bolditalic"
+        android:gravity="center"
+        android:textColor="@color/mainTextIdle"
+        android:textSize="@dimen/favourites_list_item_text_size"
+        app:layout_constraintBottom_toBottomOf="@+id/dark_recipe_title_background"
+        app:layout_constraintEnd_toEndOf="@+id/dark_recipe_title_background"
+        app:layout_constraintStart_toStartOf="@+id/decoration_dark_image_view"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Chillli and lime prawns" />
+
+</android.support.constraint.ConstraintLayout>

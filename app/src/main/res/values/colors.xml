@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#89A046</color>
+    <color name="colorPrimaryDark">#5A7118</color>
+    <color name="colorAccent">#FABC07</color>
+    <color name="colorPrimaryLight">#BAD174</color>
+    <color name="lightGrey">#EDEAE8</color>
+    <color name="midGrey">#A59E9B</color>
+    <color name="darkGrey">#2C2525</color>
+    <color name="fullRed">#BD0003</color>
+    <color name="diffusedRed">#D65C5E</color>
+    <color name="colorPrimaryLowOpacity">#9989A046</color>
+    <!-- button colours -->
+    <color name="searchIdleCenter">#BD0003</color>
+    <color name="searchIdleBoarder">#D65C5E</color>
+    <color name="searchPressedCenter">#850000</color>
+    <color name="searchPressedBoarder">#BD0003</color>
+    <color name="mainTextIdle">#FFE8DC</color>
+    <color name="mainTextPressed">#D65C5E</color>
+</resources>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="main_search_button_padding">6dp</dimen>
+    <dimen name="widget_margin">8dp</dimen>
+    <dimen name="title_padding">8dp</dimen>
+
+    <!-- search activity values -->
+    <integer name="search_recycler_column_count">1</integer>
+    <dimen name="search_list_item_margin_start">0dp</dimen>
+    <dimen name="search_list_item_margin_end">0dp</dimen>
+    <dimen name="search_list_item_title_padding">44dp</dimen>
+    <dimen name="search_check_text_size">18sp</dimen>
+    <dimen name="search_check_text_margin">0dp</dimen>
+
+    <dimen name="search_edit_text_size">18sp</dimen>
+    <dimen name="search_edit_text_height">33dp</dimen>
+    <dimen name="search_go_width">51dp</dimen>
+    <dimen name="inner_toolbar_layout_height">217dp</dimen>
+
+    <!-- search details activity values -->
+    <dimen name="search_details_margin">0dp</dimen>
+
+    <!-- read reviews list item values -->
+    <item name="reviews_list_margin_start" format="float" type="dimen">0.0</item>
+    <item name="reviews_list_margin_end" format="float" type="dimen">1.0</item>
+    <dimen name="add_button_size">24dp</dimen>
+    <dimen name="title_text_size">14sp</dimen>
+
+    <!-- shared values -->
+    <dimen name="bookmark_size">24dp</dimen>
+    <dimen name="packer_height">6dp</dimen>
+
+    <!-- favourites list item values -->
+    <dimen name="favourites_list_item_text_size">18sp</dimen>
+
+    <!-- favourites activity values -->
+    <integer name="favourites_recycler_column_count">1</integer>
+
+    <!-- favourites details activity values -->
+    <dimen name="favourites_details_margin">0dp</dimen>
+
+    <!-- main activity values -->
+    <dimen name="main_advice_text_size">24sp</dimen>
+    <dimen name="main_magnifier_size">22dp</dimen>
+
+    <!-- write review activity -->
+    <dimen name="top_instruction_text_size">24sp</dimen>
+    <dimen name="bottom_instruction_text_size">20sp</dimen>
+    <dimen name="edit_text_margin">30dp</dimen>
+</resources>

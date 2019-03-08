@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".reviews.WriteReviewActivity">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/lightGrey">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/write_review_activity_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimaryDark"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/app_title_image_view6"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="@string/write_review"
+                android:paddingStart="0dp"
+                android:paddingTop="@dimen/title_padding"
+                android:paddingEnd="65dp"
+                android:paddingBottom="@dimen/title_padding"
+                app:srcCompat="@drawable/svg_title_write_review___"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="18dp" />
+        </android.support.v7.widget.Toolbar>
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@color/colorPrimary"
+            android:fontFamily="@font/pt_serif_web_bolditalic"
+            android:gravity="center"
+            android:lineSpacingExtra="-8dp"
+            android:text="@string/write_your_review_about"
+            android:textColor="@color/colorPrimaryLight"
+            android:textSize="@dimen/top_instruction_text_size"
+            app:layout_constraintBottom_toTopOf="@+id/write_recipe_title_text_view"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/write_review_activity_toolbar" />
+
+        <ImageView
+            android:contentDescription="@string/give_two_stars_to_recipe"
+            android:id="@+id/rate_star_2"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/focus_highlight_background"
+            android:focusable="true"
+            app:layout_constraintEnd_toStartOf="@+id/rate_star_3"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/rate_star_1"
+            app:layout_constraintTop_toTopOf="@+id/rate_star_3"
+            app:srcCompat="@drawable/ic_star_border_black_24dp" />
+
+        <TextView
+            android:id="@+id/write_recipe_title_text_view"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="16dp"
+            android:background="@color/colorPrimary"
+            android:fontFamily="@font/pt_serif_web_bolditalic"
+            android:gravity="center"
+            android:lineSpacingExtra="-8dp"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:textColor="@color/mainTextIdle"
+            android:textSize="@dimen/bottom_instruction_text_size"
+            app:layout_constraintBottom_toTopOf="@+id/write_edit_text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView11"
+            tools:text="Reuben steak sandwich with skin-on fries" />
+
+        <ImageView
+            android:contentDescription="@string/give_one_star_to_recipe"
+            android:id="@+id/rate_star_1"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/focus_highlight_background"
+            android:focusable="true"
+            app:layout_constraintEnd_toStartOf="@+id/rate_star_2"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/rate_star_2"
+            app:srcCompat="@drawable/ic_star_border_black_24dp" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:fontFamily="@font/pt_serif_web_bolditalic"
+            android:text="@string/add_your_rating"
+            android:textColor="@color/colorPrimaryLight"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toTopOf="@+id/rate_star_3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/write_save_button" />
+
+        <EditText
+            android:id="@+id/write_edit_text"
+            style="@style/EditTextStyle"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="@dimen/edit_text_margin"
+            android:layout_marginEnd="@dimen/edit_text_margin"
+            android:background="@drawable/search_edit_text_background"
+            android:ems="10"
+            android:fontFamily="@font/opensans_regular"
+            android:gravity="start|top"
+            android:hint="@string/the_recipe_was"
+            android:inputType="textAutoCorrect|textMultiLine"
+            android:maxLength="1000"
+            android:paddingStart="40dp"
+            android:paddingTop="16dp"
+            android:paddingEnd="16dp"
+            android:paddingBottom="16dp"
+            android:textAlignment="viewStart"
+            android:textColor="@color/colorPrimaryDark"
+            app:layout_constraintBottom_toTopOf="@+id/guideline15"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/guideline14"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <ImageView
+            android:contentDescription="@null"
+            android:id="@+id/imageView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="@+id/write_edit_text"
+            app:layout_constraintTop_toTopOf="@+id/write_edit_text"
+            app:srcCompat="@drawable/ic_baseline_create_24px" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.35" />
+
+        <ImageView
+            android:contentDescription="@string/give_recipe_5_stars"
+            android:id="@+id/rate_star_5"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/focus_highlight_background"
+            android:focusable="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/rate_star_4"
+            app:layout_constraintTop_toTopOf="@+id/rate_star_4"
+            app:srcCompat="@drawable/ic_star_border_black_24dp" />
+
+        <ImageView
+            android:contentDescription="@string/give_3_stars_to_recipe"
+            android:id="@+id/rate_star_3"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/focus_highlight_background"
+            android:focusable="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/rate_star_4"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/rate_star_2"
+            app:layout_constraintTop_toBottomOf="@+id/textView12"
+            app:srcCompat="@drawable/ic_star_border_black_24dp" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.6" />
+
+        <ImageView
+            android:contentDescription="@string/give_recipe_4_stars"
+            android:id="@+id/rate_star_4"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/focus_highlight_background"
+            android:focusable="true"
+            app:layout_constraintEnd_toStartOf="@+id/rate_star_5"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/rate_star_3"
+            app:layout_constraintTop_toTopOf="@+id/rate_star_3"
+            app:srcCompat="@drawable/ic_star_border_black_24dp" />
+
+        <Button
+            android:id="@+id/write_save_button"
+            style="@style/GreenButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="@string/save_your_review"
+            app:layout_constraintBottom_toTopOf="@+id/textView12"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/guideline15"
+            app:layout_constraintVertical_chainStyle="spread" />
+
+        <TextView
+            android:id="@+id/sign_in_warning_text_view"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@color/colorPrimary"
+            android:elevation="10dp"
+            android:fontFamily="@font/pt_serif_web_bolditalic"
+            android:gravity="center"
+            android:paddingStart="50dp"
+            android:paddingEnd="50dp"
+            android:text="@string/you_can_t_write_reviews_unless_you_are_signed_in"
+            android:textColor="@color/mainTextIdle"
+            android:textSize="24sp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </android.support.constraint.ConstraintLayout>
+</layout>

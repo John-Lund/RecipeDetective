@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="mainTransparentButtonText">
+        <item name="android:textColor">@color/mainTextIdle</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:fontFamily">@font/opensans_regular</item>
+        <item name="android:textSize">40sp</item>
+    </style>
+
+    <style name="GreenButtonStyle" parent="Widget.AppCompat.Button">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:background">@drawable/visit_site_button_background</item>
+        <item name="android:fontFamily">@font/pt_serif_web_italic</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:paddingEnd">48dp</item>
+        <item name="android:paddingStart">48dp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@color/mainTextIdle</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="RedButtonStyle" parent="GreenButtonStyle">
+        <item name="android:background">@drawable/main_activity_search_background</item>
+        <item name="android:fontFamily">@font/opensans_light</item>
+        <item name="android:paddingStart">69dp</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:textSize">48sp</item>
+        <item name="android:paddingTop">8dp</item>
+    </style>
+
+</resources>

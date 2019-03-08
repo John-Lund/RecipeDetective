@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- main activity values -->
+    <dimen name="main_advice_text_size">30sp</dimen>
+
+    <!-- search activity values -->
+    <dimen name="title_padding">12dp</dimen>
+    <integer name="search_recycler_column_count">4</integer>
+    <dimen name="search_list_item_margin_start">8dp</dimen>
+    <dimen name="search_list_item_margin_end">8dp</dimen>
+
+    <!-- search details activity values -->
+    <dimen name="search_details_margin">300dp</dimen>
+
+    <!-- read reviews list item values -->
+    <item name="reviews_list_margin_start" format="float" type="dimen">0.3</item>
+    <item name="reviews_list_margin_end" format="float" type="dimen">0.7</item>
+
+    <!-- favourites details activity values -->
+    <dimen name="favourites_details_margin">300dp</dimen>
+
+    <!-- write review activity -->
+    <dimen name="top_instruction_text_size">38sp</dimen>
+    <dimen name="bottom_instruction_text_size">30sp</dimen>
+    <dimen name="edit_text_margin">300dp</dimen>
+
+</resources>

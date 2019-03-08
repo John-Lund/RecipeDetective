@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/favourites_details_activity_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimaryDark"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/app_title_image_view4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="@string/details"
+                android:paddingStart="0dp"
+                android:paddingTop="@dimen/title_padding"
+                android:paddingEnd="65dp"
+                android:paddingBottom="@dimen/title_padding"
+                app:srcCompat="@drawable/svg_title_details___"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="18dp" />
+        </android.support.v7.widget.Toolbar>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@color/colorPrimaryLight"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/favourites_details_activity_toolbar">
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/favourites_details_margin"
+                android:layout_marginEnd="@dimen/favourites_details_margin"
+                android:animateLayoutChanges="true"
+                android:background="@color/lightGrey">
+
+                <TextView
+                    android:id="@+id/favourites_details_recipe_name_text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="70dp"
+                    android:layout_marginTop="32dp"
+                    android:layout_marginEnd="70dp"
+                    android:fontFamily="@font/pt_serif_web_bolditalic"
+                    android:includeFontPadding="false"
+                    android:lineSpacingExtra="-8sp"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/fullRed"
+                    android:textSize="28sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/favourites_details_recipe_image"
+                    tools:text="Salmon Mouse with lots of other stuff that tastes really nice like chocolate" />
+
+                <TextView
+                    android:id="@+id/favourites_details_servings_text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="36dp"
+                    android:fontFamily="@font/opensans_regular"
+                    android:includeFontPadding="false"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/darkGrey"
+                    android:textSize="12sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/favourites_imageView9"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/favourites_imageView9"
+                    app:layout_constraintTop_toTopOf="@+id/favourites_imageView9"
+                    tools:text="8" />
+
+                <TextView
+                    android:id="@+id/favourites_details_ingredients_list_text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="36dp"
+                    android:fontFamily="@font/opensans_regular"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/darkGrey"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/favourites_imageView8"
+                    app:layout_constraintTop_toBottomOf="@+id/favourites_textView6"
+                    tools:text="hjhkjhjkh" />
+
+                <TextView
+                    android:id="@+id/favourites_textView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginEnd="8dp"
+                    android:fontFamily="@font/pt_serif_web_bolditalic"
+                    android:includeFontPadding="false"
+                    android:text="@string/ingredients"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/favourites_details_prep_time_text" />
+
+                <ImageView
+                    android:id="@+id/favourites_details_recipe_image"
+                    android:layout_width="0dp"
+                    android:layout_height="240dp"
+                    android:contentDescription="@string/a_picture_of_the_recipe"
+                    android:scaleType="centerCrop"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:srcCompat="@drawable/placeholder" />
+
+                <TextView
+                    android:id="@+id/favourites_details_prep_time_text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="24dp"
+                    android:fontFamily="@font/opensans_regular"
+                    android:includeFontPadding="false"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/darkGrey"
+                    android:textSize="12sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/favourites_imageView8"
+                    app:layout_constraintEnd_toStartOf="@+id/favourites_guideline11"
+                    app:layout_constraintStart_toEndOf="@+id/favourites_imageView8"
+                    app:layout_constraintTop_toTopOf="@+id/favourites_imageView8"
+                    tools:text="2 hours 10 mins" />
+
+                <ImageView
+                    android:id="@+id/favourites_imageView8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="68dp"
+                    android:layout_marginTop="16dp"
+                    android:contentDescription="@string/time_icon"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/favourites_details_recipe_name_text"
+                    app:srcCompat="@drawable/ic_baseline_clock_24px" />
+
+                <ImageView
+                    android:id="@+id/favourites_imageView9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/people_this_recipe_serves"
+                    app:layout_constraintBottom_toBottomOf="@+id/favourites_imageView8"
+                    app:layout_constraintStart_toStartOf="@+id/favourites_guideline11"
+                    app:layout_constraintTop_toTopOf="@+id/favourites_imageView8"
+                    app:srcCompat="@drawable/ic_baseline_people_24px" />
+
+                <android.support.constraint.Guideline
+                    android:id="@+id/favourites_guideline11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.6" />
+
+                <ImageView
+                    android:id="@+id/favourites_details_bookmark_icon"
+                    android:layout_width="@dimen/bookmark_size"
+                    android:layout_height="@dimen/bookmark_size"
+                    android:layout_marginEnd="20dp"
+                    android:contentDescription="@string/recipe_is_a_favourite"
+                    app:layout_constraintEnd_toStartOf="@+id/favourites_details_recipe_name_text"
+                    app:layout_constraintTop_toTopOf="@+id/favourites_imageView12"
+                    app:srcCompat="@drawable/ic_baseline_bookmark_24px" />
+
+                <ImageView
+                    android:id="@+id/favourites_imageView12"
+                    android:layout_width="30dp"
+                    android:layout_height="8dp"
+                    android:layout_marginStart="8dp"
+                    android:contentDescription="@null"
+                    app:layout_constraintBottom_toBottomOf="@+id/favourites_details_recipe_image"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <Button
+                    android:id="@+id/favourites_details_site_link_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="32dp"
+                    android:layout_marginEnd="8dp"
+                    android:background="@drawable/visit_site_button_background"
+                    android:fontFamily="@font/pt_serif_web_italic"
+                    android:includeFontPadding="false"
+                    android:paddingStart="24dp"
+                    android:paddingEnd="24dp"
+                    android:text="@string/see_the_method"
+                    android:textAllCaps="false"
+                    android:textColor="@color/mainTextIdle"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/favourites_details_ingredients_list_text" />
+
+                <ImageView
+                    android:id="@+id/write_review_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="60dp"
+                    android:layout_marginBottom="50dp"
+                    android:contentDescription="@string/write_your_review_button"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/favourites_details_ingredients_list_text"
+                    app:layout_constraintTop_toBottomOf="@+id/favourites_details_site_link_button"
+                    app:srcCompat="@drawable/write_review_icon_idle" />
+
+                <TextView
+                    android:id="@+id/write_review_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/focus_highlight_background"
+                    android:focusable="true"
+                    android:fontFamily="@font/pt_serif_web_italic"
+                    android:includeFontPadding="false"
+                    android:text="@string/write_your_review"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="16sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/write_review_icon"
+                    app:layout_constraintEnd_toEndOf="@+id/favourites_details_site_link_button"
+                    app:layout_constraintStart_toStartOf="@+id/favourites_details_site_link_button"
+                    app:layout_constraintTop_toTopOf="@+id/write_review_icon" />
+
+                <ImageButton
+                    android:id="@+id/remove_favourite_button"
+                    style="@style/RemoveButton"
+                    android:layout_width="@dimen/add_button_size"
+                    android:layout_height="@dimen/add_button_size"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:contentDescription="@string/delete_recipe_from_favourites"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/favourites_details_recipe_name_text"
+                    app:layout_constraintTop_toTopOf="@+id/favourites_details_recipe_name_text" />
+            </android.support.constraint.ConstraintLayout>
+        </ScrollView>
+    </android.support.constraint.ConstraintLayout>
+</layout>

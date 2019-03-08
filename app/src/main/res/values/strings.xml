@@ -1,0 +1,68 @@
+<resources>
+    <string name="app_name">Recipe Detective</string>
+
+    <string name="read_recent_reviews">READ\nRECENT\nREVIEWS</string>
+    <string name="my_favourite_recipes">MY\nFAVOURITE\nRECIPES</string>
+    <string name="search_recipes_by_ingredients_save_your_favourite_ones_and_write_a_review">Search recipes by\n ingredients, save your\n favourite ones and\n write a review</string>
+    <string name="sign_out">Sign out</string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="add_widget">Add widget</string>
+    <string name="name_hint">User Name</string>
+
+    <!-- toast, widget and UI messages -->
+    <string name="recipe_deleted_message">Recipe deleted from favourites</string>
+    <string name="internet_warning_review_activity">You have no internet connection. Please reconnect to the internet before writing a review.</string>
+    <string name="initial_widget_message_to_user">When you view a favourite in Recipe Detective, the ingredients will appear here.</string>
+    <string name="read_reviews_activity_internet_warning">You have no internet connection. You must reconnect to the internet before you can see any reviews.</string>
+    <string name="favourite_added_message">- has been added to your favourites.</string>
+    <string name="search_no_hits_warning">No hits. Check your spelling or try other ingredients</string>
+    <string name="search_activity_internet_warning">You have no internet connection. Reconnect to the internet and try searching again.</string>
+    <string name="search_activity_invalid_characters_warning">Use only letters A to Z, commas and spaces in your search</string>
+    <string name="recipe_added_to_favourites_message">Recipe added to favourites</string>
+    <string name="favourites">favourites</string>
+    <string name="recipes_that_you_add_as_favourites_will_appear_here">Recipes that you add as favourites will appear here</string>
+    <string name="details">details</string>
+    <string name="ingredients">Ingredients</string>
+    <string name="a_picture_of_the_recipe">a picture of the recipe</string>
+    <string name="time_icon">time icon</string>
+    <string name="people_this_recipe_serves">people this recipe serves</string>
+    <string name="recipe_is_a_favourite">recipe is a favourite</string>
+    <string name="write_your_review_button">write your review button</string>
+    <string name="write_your_review">Write your review</string>
+    <string name="delete_recipe_from_favourites">delete recipe from favourites</string>
+    <string name="recipe_detective">recipe detective</string>
+    <string name="search">Search</string>
+    <string name="go_to_favourites">go to favourites</string>
+    <string name="read_reviews">read reviews</string>
+    <string name="reviews">reviews</string>
+    <string name="empty_review_screen_message">Reviews will appear here when they are available</string>
+    <string name="search_screen_instruction_to_user">Type your ingredients separated by a comma</string>
+    <string name="search_screen_example_text">butter, blue cheese, eggs</string>
+    <string name="start_search">start search</string>
+    <string name="powered_by_yummly">powered by Yummly</string>
+    <string name="see_the_method">see the method</string>
+    <string name="yummly_rating">YUMMLY RATING</string>
+    <string name="write_review">write review</string>
+    <string name="write_your_review_about">Write your review\n about</string>
+    <string name="give_two_stars_to_recipe">give two stars to recipe</string>
+    <string name="give_one_star_to_recipe">give one star to recipe</string>
+    <string name="add_your_rating">Add your rating</string>
+    <string name="the_recipe_was">The recipe was...</string>
+    <string name="give_recipe_5_stars">give recipe 5 stars</string>
+    <string name="give_recipe_4_stars">give recipe 4 stars</string>
+    <string name="save_your_review">save your review</string>
+    <string name="you_can_t_write_reviews_unless_you_are_signed_in">You can\'t write reviews unless you are signed in</string>
+    <string name="give_3_stars_to_recipe">give 3 stars to recipe</string>
+    <string name="make_this_recipe_a_favourite">make this recipe a favourite</string>
+    <string name="by">by</string>
+    <string name="recipe_rating">recipe rating</string>
+    <string name="found_on">found on</string>
+    <string name="recipe_detective_shopping_list">recipe detective shopping list</string>
+    <string name="the_ingredients_from_your_last_viewed_favourite_will_appear_here_to_help_you_shop">The ingredients from your last-viewed favourite will appear here to help you shop</string>
+    <string name="you_are_signed_in">You are signed in!</string>
+    <string name="write_review_internet_connection_warning">You have no internet connection. Recipe Detective is unable to save reviews until your internet connection is re-established</string>
+    <string name="review_upload_success_message">Your review has been uploaded</string>
+    <string name="write_review_already_done_review_warning">You\'ve already written a review for this recipe</string>
+    <string name="empty_review_warning">You need to write something before you upload your review</string>
+
+</resources>
