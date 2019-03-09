@@ -2,12 +2,18 @@
 
 ### **Overview**
 
-This is the final project I submitted for my Udacity Android Nanodegree
+This is the final project I submitted for my Udacity Android Nanodegree.  It's a recipe finding app
+that uses the Yummly api for its data - https://developer.yummly.com/documentation  The user can enter
+a list of ingredients in the search activity edit text and the app will request recipes that contain
+those ingredients.  Recipes can be stored in a Room-powered "favourites" data base and reviews written by
+users can be shared via a Firebase Realtime Database.  The app uses a simple Firebase Auth and viewmodels,
+live data and a respository.
+
+If you want to see this app fully working, you'll need to get a Yummly key and app ID and insert them where
+indicated by a "todo" I left in there.  
 
 
-
-
-
+### **Sample UI images**
 
 ![image](https://user-images.githubusercontent.com/36385109/54075345-39936780-4296-11e9-8564-3d6e09681d1e.png)
 
