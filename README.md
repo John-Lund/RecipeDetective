@@ -51,7 +51,7 @@ indicated by a "todo" I left in there.  Without an app ID and key, everything wi
 
 MIT License
 
-Copyright (c) [year] [fullname]
+Copyright (c) 2019 John Lund
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
