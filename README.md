@@ -7,10 +7,11 @@ that uses the Yummly api for its data - https://developer.yummly.com/documentati
 a list of ingredients in the search activity edit text and the app will request recipes that contain
 those ingredients.  Recipes can be stored in a Room-powered "favourites" data base and reviews written by
 users can be shared via a Firebase Realtime Database.  The app uses a simple Firebase Auth and viewmodels,
-live data and a respository.
+live data and a respository. It also has a home screen widget to display ingredients from recipes viewed
+in favourite details.
 
 If you want to see this app fully working, you'll need to get a Yummly key and app ID and insert them where
-indicated by a "todo" I left in there.  
+indicated by a "todo" I left in there.  Without an app ID and key, everything will work apart from the search. 
 
 
 ### **Sample UI images**
